@@ -1,0 +1,247 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+  color: white;
+}
+:root{
+  --primary-color: #0288D1;
+  --seconde-color: white;
+
+}
+
+
+body{
+  /* background-image: url(images/landing1.jpg); */
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/landing1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  padding: 0 5%;
+}
+
+header{
+  padding: 1% 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+/* logo */
+header .LogoDiv{
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* nav bar */
+header nav{
+  width: 40%;
+}
+header nav ul{
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+header nav ul li{
+  display: flex;
+  align-items: start;
+}
+header nav ul a{
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+}
+header nav ul a::after{
+  position: absolute;
+  content: "";
+  border-radius: 50px;
+  background-color: var(--primary-color);
+  height: 3px;
+  width: 0%;
+  top: 120%;
+  left: 0%;
+  transition: 0.5s ease;
+}
+header nav ul a:hover::after{
+  width: 100%;
+}
+
+/* button */
+header button, .btn_hero{
+  font-weight: bold;
+  font-size: large;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.913);
+  background: var(--primary-color);
+  padding: 8px 18px;
+  border: none;
+  border-radius: 8px;
+  transition: 0.4s ease;
+  position: relative;
+  border: 0.3px solid rgba(0, 0, 0, 0.645);
+}
+header button:hover, .btn_hero:hover{
+  background: #066496;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* =================================================== */
+/* btn toggle ------------- */
+.btn_toggl{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 101;
+  display: none;
+}
+
+.btn_toggl .open, .btn_toggl .close{
+  display: none;
+  cursor: pointer;
+  font-size: 1.2em;
+  transition: 0.3s;
+}
+
+.btn_toggl .open:hover, .btn_toggl .close:hover{
+  color: var(--primary-color) !important;
+  font-size: 1.2em;
+  scale: 1.3;
+}
+
+
+
+/* class for toggle */
+header .toggle-nav{
+
+
+  position: absolute;
+  top: 110%;
+  right: 0%;
+  border-radius: 10px;
+  width: 0;
+  padding: 1% 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+
+  /* efect */
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+
+
+  /* slide */
+  /* height: 0; */
+  transition: 0.3s ease;
+  z-index: 101;
+  overflow: hidden;
+}
+
+.openx{
+  /* height: 180px; */
+  width: 100% !important;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+}
+
+header .toggle-nav ul{
+  width: 99%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+header .toggle-nav ul li{
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+header .toggle-nav ul li a{
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 10px;
+}
+
+header .toggle-nav ul li a:hover{
+  background-color: rgba(255, 255, 255, 0.119);
+}
+
+header .toggle-nav button{
+  width: 99%;
+  border-radius: 10px;
+  border: none;
+}
+
+
+/* btn toggle ------------------------- */
+/* overlay */
+.overDarkClass{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  display: none;
+}
+
+/* =================================================== */
+
+
+/* main */
+main{
+  height: 60vh;
+  display: flex;
+  align-items: center;
+}
+.hero{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero h1{
+  font-size: 40px;
+  padding: 1% 0;
+}
+
+.hero p{
+  width: 50%;
+  font-size: 14px;
+}
+
+.hero .btn_hero{
+  margin-top: 10px;
+}
+
+/* media query */
+@media screen and ( max-width: 700px ){
+  
+  header .nav-pc, .nav-btn-pc{
+    display: none;
+  }
+
+  .btn_toggl{
+    display: block;
+  }
+
+  #opn_toggle{
+    display: block;
+  }
+
+  #cls_toggle{
+    display: none;
+  }
+
+}
+
