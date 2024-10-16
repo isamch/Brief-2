@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>nav bar glass</title>
+
+		<!-- link -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+		<link rel="stylesheet" href="../style.css">
+		<script defer src="../scripte.js"></script>
+		
+	</head>
+	<body>
+		<!-- header -->
+		<header>
+			<a class="LogoDiv" href="../index.html">日本 | japArt</a>
+			<nav class="nav-pc">
+				<ul>
+					<li><a href="../index.html" class="nav-link">Home</a></li>
+					<li><a href="gallery.html" class="nav-link ">Gallery</a></li>
+					<li><a href="about.html" class="nav-link">About</a></li>
+					<li><a href="contact.html" class="nav-link active_link_nav">Contact</a></li>
+				</ul>
+			</nav>
+			<button class="nav-btn-pc" >
+				<a href="../index.html">
+					Explore Collection
+				</a>
+			</button>
+			<div class="btn_toggl">
+				<i onclick="toggle_nav()" id="opn_toggle" class="fa-solid fa-bars open" style="color: #ffffff;"></i>
+				<i onclick="toggle_nav()" id="cls_toggle" class="fa-solid fa-xmark close" style="color: #ffffff;"></i>
+			</div>
+
+			<nav class="toggle-nav" id="navSide">
+				<ul>
+					<li><a href="../index.html" class="nav-link">Home</a></li>
+					<li><a href="gallery.html" class="nav-link">Gallery</a></li>
+					<li><a href="about.html" class="nav-link">About</a></li>
+					<li><a href="contact.html" class="nav-link active_link_nav">Contact</a></li>
+				</ul>
+				<button>
+					<a href="../index.html">
+						Explore Collection
+					</a>
+				</button>
+			</nav>
+		</header>
+
+		<!-- main -->
+		<!-- dark overlay -->
+		<div onclick="toggle_nav()" id="overdark"></div>
+
+		<main>
+
+			<section class="hero">
+				<div class="hero_bg">
+					<h1>
+						日本 | Contact
+					</h1>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					</p>
+				</div>
+			</section>
+
+
+
+
+		</main>
+
+
+		<footer>
+			<div class="container">
+					<div class="footer-content">
+							<div class="footer-section about">
+									<h3>About Us</h3>
+									<p>We are passionate about bringing the finest Japanese art to the world. Our collection includes prints, paintings, and calligraphy from renowned artists.</p>
+							</div>
+
+							<div class="footer-section contact">
+									<h3>Contact Us</h3>
+									<p>Email: info@japaneseartgallery.com</p>
+									<p>Phone: +123 456 7890</p>
+							</div>
+					</div>
+					<div class="footer-bottom">
+							<p>© 2024 Our Website. All Rights Reserved.</p>
+					</div>
+			</div>
+	</footer>
+
+	</body>
+</html>

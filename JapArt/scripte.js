@@ -2,10 +2,12 @@ const sideBar = document.getElementById('navSide');
 const openBtn = document.getElementById('opn_toggle');
 const closeBtn = document.getElementById('cls_toggle');
 
-// window.onload = function() {
-//   openBtn.style.display = 'block';  
-//   closeBtn.style.display = 'none'; 
-// }
+const overlay = document.getElementById('overdark');
+
+window.onload = function() {
+  openBtn.style.display = 'block';  
+  closeBtn.style.display = 'none'; 
+}
 
 
 function toggle_nav() {
@@ -18,6 +20,9 @@ function toggle_nav() {
     // nav :
     sideBar.classList.add('openx');
 
+    // overlay :
+    overlay.style.display = 'block';
+
   }else{
 
     openBtn.style.display = 'block';
@@ -25,8 +30,10 @@ function toggle_nav() {
 
     // nav :
     sideBar.classList.remove('openx');
-  }
 
+    // overlay :
+    overlay.style.display = 'none';
+  }
 
 }
 

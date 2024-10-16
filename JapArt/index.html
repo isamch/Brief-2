@@ -17,14 +17,16 @@
 			<a class="LogoDiv" href="index.html">日本 | japArt</a>
 			<nav class="nav-pc">
 				<ul>
-					<li><a href="index.html" class="nav-link">Home</a></li>
-					<li><a href="#" class="nav-link">Product</a></li>
-					<li><a href="#" class="nav-link">About</a></li>
-					<li><a href="#" class="nav-link">Contact</a></li>
+					<li><a href="index.html" class="nav-link active_link_nav">Home</a></li>
+					<li><a href="subpages/gallery.html" class="nav-link">Gallery</a></li>
+					<li><a href="subpages/about.html" class="nav-link">About</a></li>
+					<li><a href="subpages/contact.html" class="nav-link">Contact</a></li>
 				</ul>
 			</nav>
 			<button class="nav-btn-pc" >
-				Explore Collection
+				<a href="subpages/gallery.html">
+					Explore Collection
+				</a>
 			</button>
 			<div class="btn_toggl">
 				<i onclick="toggle_nav()" id="opn_toggle" class="fa-solid fa-bars open" style="color: #ffffff;"></i>
@@ -33,37 +35,66 @@
 
 			<nav class="toggle-nav" id="navSide">
 				<ul>
-					<li><a href="index.html" class="nav-link">Home</a></li>
-					<li><a href="#" class="nav-link">Product</a></li>
-					<li><a href="#" class="nav-link">About</a></li>
-					<li><a href="#" class="nav-link">Contact</a></li>
+					<li><a href="index.html" class="nav-link active_link_nav">Home</a></li>
+					<li><a href="subpages/gallery.html" class="nav-link">Gallery</a></li>
+					<li><a href="subpages/about.html" class="nav-link">About</a></li>
+					<li><a href="subpages/contact.html" class="nav-link">Contact</a></li>
 				</ul>
 				<button>
-					Explore Collection
+					<a href="subpages/gallery.html">
+						Explore Collection
+					</a>
 				</button>
 			</nav>
 		</header>
 
 		<!-- main -->
 		<!-- dark overlay -->
-		<div id="overdark"></div>
+		<div onclick="toggle_nav()" id="overdark"></div>
 
 		<main>
+
 			<section class="hero">
-				<h1>
-					Hero Section
-				</h1>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Voluptatem consectetur doloribus consequatur mollitia rerum,
-					quo ducimus molestiae quis perspiciatis nihil iure nostrum.
-					Consequuntur nihil quisquam non quae aut repellat amet.
-				</p>
-				<button class="btn_hero" >
-					Explore Collection
-				</button>
+				<div class="hero_bg">
+					<h1>
+						日本 | japArt
+					</h1>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					</p>
+					<button class="btn_hero" >
+						<a href="">
+							Explore Collection
+						</a>
+					</button>
+				</div>
 			</section>
+
+
+
+
 		</main>
+
+
+		<footer>
+			<div class="container">
+					<div class="footer-content">
+							<div class="footer-section about">
+									<h3>About Us</h3>
+									<p>We are passionate about bringing the finest Japanese art to the world. Our collection includes prints, paintings, and calligraphy from renowned artists.</p>
+							</div>
+
+							<div class="footer-section contact">
+									<h3>Contact Us</h3>
+									<p>Email: info@japaneseartgallery.com</p>
+									<p>Phone: +123 456 7890</p>
+							</div>
+					</div>
+					<div class="footer-bottom">
+							<p>© 2024 Our Website. All Rights Reserved.</p>
+					</div>
+			</div>
+	</footer>
 
 	</body>
 </html>
